@@ -57,3 +57,16 @@ p {
     width: 100%;
     border: 1px solid #000;
 }
+
+footer {
+    text-align: center;
+    background-color: #666666;
+    border-top: #4aaaa5 5px solid;
+    min-height: 80px;
+    margin: 3% -5% -5%;
+}
+
+#footer {
+    color: #FFF;
+    padding-top: 15px;
+}

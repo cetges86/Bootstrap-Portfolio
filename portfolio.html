@@ -7,67 +7,116 @@
     <title>Panel Layout Activity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Chris Etges</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span id="spanNav"> Chris Etges</span>
+                </a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active">
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">
+                            <span class="link">About </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <span class="link">Portfolio </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <span class="link">Contact </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>About Me</h1>
-                        <hr>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Portfolio</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5">
+                            <img id="portrait" src="images/headshot.jpg" alt="Portrait of Chris">
+                        </div>
+                        <div class="col-md-8 col-sm-7">
+                            <p>My name is Chris Etges, and I have recently begun my journey towards becoming a full time web-developer.
+                                I am currently enrolled in the full-stack web development course at the University of Denver.
+                                I started learning HTML and CSS through codeacademy, and continued with courses through the
+                                University of Michigan online (via Coursera) in Javascript and Responsive Design. I continue
+                                to learn and grow and improve my skills. I hope to become a full-time web developer in front-end
+                                technologies, though once I become more familiar with backend technologies I'm hoping to
+                                be a full-stack developer. I've been interested in tech as a hobby for my entire life, and
+                                frequently mess around with beta programs, and custom ROM installs on my Android devices.
+                                I'm an avid gamer, and love photography and travel. You'll see a few of my website projects
+                                in my portfolio, and feel free to reach out to me for custom work or questions. Thanks!
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="http://placehold.it/200x200" alt="" class="img img-thumbnail">
-                    </div>
-                    <div class="col-md-9">
-                        <p>Mice wack the mini furry mouse yet cough furball for meoooow meoooow. I shredded your linens for
-                            you climb leg more napping, more napping all the napping is exhausting, drink water out of the
-                            faucet. Jump on human and sleep on her all night long be long in the bed, purr in the morning
-                            and then give a bite to every human around for not waking up request food, purr loud scratch
-                            the walls, the floor, the windows, the humans claws in your leg meow for food, then when human
-                            fills food dish, take a few bites of food and continue meowing yet when in doubt, wash.</p>
+                <div class="col-xs-2"></div>
+                <div class="col-md-4 col-sm-7 col-xs-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Connect With Me</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="https://github.com/cetges86">
+                                    <img class="logos" src="images/githublogo.png" alt="github logo">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="https://www.linkedin.com/in/chrisetges">
+                                    <img class="logos" src="images/linkedinlogo.png" alt="linkedin logo">
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a href="https://stackoverflow.com/users/8929426/christopher-etges?tab=profile">
+                                    <img class="logos" src="images/overflowlogo.png" alt="stack overflow icon">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
-                    </div>
-                    <div class="panel-body">
-                        Connect with Me
-                    </div>
-                </div>
-            </div>
         </div>
-
     </div>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <footer>
+                <p id="footer">Copyright &copy; 2018 Chris Etges</p>
+            </footer>
+        </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
