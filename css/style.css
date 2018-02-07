@@ -46,6 +46,29 @@ hr {
     color: #666666;
 }
 
+.image {
+    position: relative;
+    width: 100%%;
+    margin: 3%;
+    display: inline-block;
+}
+
+.portImage {
+    width: 100%;
+    min-height: 200px;
+    margin: 10px;
+}
+
+.image h4 {
+    position: absolute;
+    top: 125px;
+    left: 20px;
+    background-color: #4aaaa5;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    opacity: .8;
+}
 
 p {
     margin: 1vh;
