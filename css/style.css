@@ -8,8 +8,11 @@ body {
 
 .navbar {
     margin-bottom: 0;
+    height: 9vh;
 }
-
+.navbar-brand{
+    margin-top: 0.5vh;
+}
 .link {
     padding: 10px;
     font-size: 1.3em;
@@ -79,6 +82,22 @@ p {
 #portrait {
     width: 100%;
     border: 1px solid #000;
+}
+
+input {
+    width: 100%;
+    padding: 12px 0px;
+}
+
+#message {
+    height:15em;
+    width: 100%;
+    resize: none;
+}
+
+#submit {
+    width: 15%;
+    margin: 15px 0px 30px;
 }
 
 footer {
